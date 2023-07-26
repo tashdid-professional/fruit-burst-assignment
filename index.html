@@ -9,22 +9,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <Header class="mx-32">
+    <Header class="lg:mx-32 mx-6">
         <!-- Navigation section -->
-        <div class="navbar bg-red-400 lg:text-white text-black rounded-full my-8
+        <div class="navbar lg:bg-red-400 lg:text-white text-black rounded-full my-8
         justify-around">
             <div class="">
-              <div class="dropdown">
-                <label tabindex="0" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                </label>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a>Home</a></li>
-                  <li><a>About us</a></li>
-                  <li><a>Shop</a></li>
-                  <li><a>All fruits</a></li>
-                </ul>
-              </div>
+              
               
             </div>
             <div class="hidden lg:flex lg-content-start-">
@@ -38,10 +28,26 @@
                 <li><a>All fruits</a></li>
               </ul>
             </div>
-            <div class="">
+            
+            <div class="flex">
             <img src="images/logo.png" alt="">
-            <p class="text-2xl">Fruit Burst</p>
+            <p class="text-2xl font-semibold">Fruit Burst</p>
             </div>
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M3.75 6.75H20.25M3.75 12H20.25M3.75 17.25H20.25" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </label>
+              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a>Home</a></li>
+                <li><a>About us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All fruits</a></li>
+              </ul>
+            </div>
+            
+          
             <div class="hidden lg:inline-flex">
                 <input type="text" placeholder="Search Here" class="rounded-full w-60 p-3 h-11 relative">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="absolute right-35">
@@ -52,12 +58,12 @@
           </div>
     
     </Header>
-    <main class="mx-32">
-        <!-- Banner Section -->
+    <main class="lg:mx-32 mx-6">
+        <!-- Banner/Carousel Section -->
         <section>
         <div class="carousel w-full">
             
-            <div id="slide1" class="carousel-item relative w-full h-[600px]">
+            <div id="slide1" class="carousel-item relative w-full max-h-[600px]">
               <img src="/images/banner1.png" class="w-full" />
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide4" class="btn btn-circle">❮</a> 
@@ -85,7 +91,7 @@
                 <a href="#slide1" class="btn btn-circle">❯</a>
               </div>
             </div>
-            <div class=" min-h-screen absolute top-1/4 w-full">
+            <div class=" min-h-screen absolute top-1/4 ">
                 <div class="hero-content text-center  text-white">
                   <div class="max-w-md">
                     <h1 class="text-5xl font-bold">Exotic tastes at your doorstep</h1>
@@ -100,8 +106,8 @@
         <!-- Deal of the day section -->
         <section class="space-y-8 mt-16">
             <div class="flex justify-between flex-wrap">
-            <div class="space-y-8">
-                <h3 class="text-5xl font-extrabold">Deal of the day</h3>
+            <div class="space-y-8 lg:text-start text-center">
+                <h3 class="text-xl lg:text-5xl font-extrabold">Deal of the day</h3>
                 <p class="font-medium ">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>Latin literature from 45 BC, making it over 2000 years old.</p>
             </div>
         
@@ -696,7 +702,7 @@
                 <img src="images/logo.png" alt="">
                 <h3 class="font-bold text-4xl">Fruit Burst</h3>
             </div>
-            <div class="grid grid-flow-col gap-4 font-semibold">
+            <div class=" flex flex-wrap gap-4 font-semibold">
               <a class="link link-hover">Home</a> 
               <a class="link link-hover">About us</a> 
               <a class="link link-hover">All fruits</a> 
