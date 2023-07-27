@@ -58,9 +58,9 @@
     <main class="lg:mx-32 mx-6">
         <!-- Banner/Carousel Section -->
         <section class="lg:mb-48 relative">
-        <div class="carousel w-full ">
+        <div class="carousel w-full lg:h-[600px] h-[190px]">
             
-            <div id="slide1" class="carousel-item relative w-full lg:h-[600px] h-[190px]">
+            <div id="slide1" class="carousel-item relative w-full">
               <img src="images/banner1.png" class="w-full" />
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide4" class="btn btn-circle">❮</a> 
@@ -88,7 +88,7 @@
                 <a href="#slide1" class="btn btn-circle">❯</a>
               </div>
             </div>
-            <div class=" min-h-screen absolute lg:top-1/4 lg:left-72 left-12 lg:w-auto w-56">
+            <div class=" min-h-screen absolute lg:top-1/4 lg:left-1/3 left-12 lg:w-auto w-56">
                 <div class="hero-content text-center  text-white">
                   <div class="max-w-md">
                     <h1 class="lg:text-5xl text-lg font-bold">Exotic tastes at your doorstep</h1>
@@ -100,7 +100,7 @@
             
           </div>
           <!-- Bonus section part -->
-          <div class="lg:flex hidden w-[800px] h-[180px]  justify-center items-center position absolute bottom-[-85px] left-36  bg-white shadow-md">
+          <div class="lg:flex hidden w-8/12 h-48 justify-center items-center position absolute bottom-[-85px] left-64  bg-white shadow-md">
             <div>
               <img src="images/fruit1.png" alt="">
               <p class="text-center font-medium">Grape</p>
@@ -375,7 +375,7 @@
             
         </section>
         <!-- Meet the team section -->
-        <section class="min-h-[600px] space-y-10  text-white mb-32 pb-7"  style="background-image: url(images/team.png);">
+        <section class="min-h-[600px] space-y-10  text-white mb-32 pb-7 bg-cover"  style="background-image: url(images/team.png);">
           <div class="text-center space-y-10 pt-20">
             <h2 class="text-4xl font-extrabold">Meet the team section</h2>
             <p>Contrary to popular belief, is not simply random text. It has roots in a piece <br>of classical Latin literature from 45 BC, making it over 2000 years old.</p>
@@ -591,7 +591,7 @@
           <!-- container left div -->
           <div class="space-y-8 text-center lg:text-left">
             <!-- content-1 -->
-            <div class="lg:flex space-x-4">
+            <div class="lg:flex m-auto space-x-4">
               <div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="m-auto m-0">
                   <path d="M20.52 9.16036C21.2025 8.49188 21.6 7.5787 21.6 6.6C21.6 4.61503 19.9852 3 18 3C17.3441 3 16.6988 3.18028 16.1332 3.52148C15.9442 3.63577 15.8832 3.88144 15.9973 4.07072C16.1113 4.26 16.3574 4.32033 16.5465 4.20666C16.9875 3.94064 17.4899 3.80002 18 3.80002C19.5437 3.80002 20.8 5.05608 20.8 6.6C20.8 7.55077 20.3238 8.42714 19.5246 8.94548C18.8535 9.38573 18.0027 9.51267 17.2258 9.29138C17.0156 9.23081 16.7922 9.35348 16.7312 9.56597C16.6707 9.77845 16.7937 9.99975 17.0062 10.0605C17.3297 10.1531 17.664 10.2 18 10.2C18.629 10.2 19.2369 10.0284 19.7767 9.71855C21.8301 10.4626 23.2 12.4013 23.2 14.6V16.6H19.5525C19.2692 13.9283 17.5884 11.5904 15.1367 10.4802C15.9169 9.68587 16.4 8.59875 16.4 7.40002C16.4 4.97381 14.4262 3 12 3C9.57384 3 7.59998 4.97381 7.59998 7.40002C7.59998 8.59913 8.08336 9.68658 8.86397 10.481C8.03887 10.8559 7.27364 11.3803 6.62461 12.0256C5.38041 13.2734 4.62328 14.8749 4.44356 16.6001H0.800016V14.6001C0.800016 13.2149 1.34105 11.9089 2.32191 10.9239C2.86186 10.3874 3.51923 9.97805 4.22705 9.7208C4.76691 10.0294 5.37305 10.2 6 10.2C6.33595 10.2 6.67031 10.1531 6.99375 10.0605C7.20623 9.9998 7.32928 9.7785 7.26876 9.56602C7.20783 9.35353 6.98437 9.23105 6.77423 9.29142C5.99766 9.51309 5.1473 9.38634 4.47347 8.94455C3.67622 8.42714 3.20002 7.55081 3.20002 6.6C3.20002 5.05608 4.45627 3.80002 6 3.80002C6.51014 3.80002 7.0125 3.94064 7.4535 4.20666C7.64334 4.32033 7.88827 4.25939 8.00273 4.07072C8.11678 3.88148 8.05584 3.63577 7.8668 3.52148C7.30116 3.18028 6.65587 3 6 3C4.01484 3 2.4 4.61503 2.4 6.6C2.4 7.57795 2.7968 8.49042 3.47737 9.1583C2.84302 9.45319 2.25712 9.8603 1.75627 10.3578C0.623812 11.4953 0 13.0018 0 14.6V17C0 17.2209 0.178922 17.4 0.399984 17.4H4.39997V20.6C4.39997 20.8209 4.57889 21 4.79995 21H19.2C19.4211 21 19.5999 20.8209 19.5999 20.6V17.4H23.5999C23.821 17.4 23.9999 17.2209 23.9999 17V14.6C24 12.2349 22.6255 10.131 20.52 9.16036ZM8.4 7.40002C8.4 5.41505 10.0148 3.80002 12 3.80002C13.9852 3.80002 15.6 5.41505 15.6 7.40002C15.6 9.38498 13.9852 11 12 11C10.0148 11 8.4 9.38494 8.4 7.40002ZM18.8 20.2H5.19998V17.4C5.19998 15.5863 5.907 13.8783 7.18983 12.5916C7.86562 11.9194 8.68491 11.398 9.5633 11.0607C10.2615 11.527 11.0992 11.8 12 11.8C12.9022 11.8 13.7415 11.5262 14.4403 11.0585C17.0549 12.0631 18.8 14.5838 18.8 17.4V20.2Z" fill="#121212"/>
@@ -650,7 +650,7 @@
           </div>
           <!-- image container div -->
           <div>
-            <img src="images/whychoose1.png" alt="" class="hidden lg:flex">
+            <img src="images/whychoose1.png" alt="" class="hidden lg:flex m-auto">
           </div>
           <!-- container right div -->
           <div class="space-y-8 lg:text-right text-center ">
@@ -679,7 +679,7 @@
               </div>
               <div class="space-y-3">
               <h3 class="text-xl font-bold">Integrated Supplier</h3>
-              <hr class="w-28 m-auto lg:ml-52">
+              <hr class="w-28 m-auto  lg:mr-0">
               <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
             </div>
             </div>
@@ -693,12 +693,12 @@
               </div>
               <div class="space-y-3">
               <h3 class="text-xl font-bold">Sustainable Practice</h3>
-              <hr class="w-28 m-auto lg:ml-52">
+              <hr class="w-28 m-auto lg:mr-0">
               <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
             </div>
             </div>
             <!-- content-3 -->
-            <div class="lg:flex space-x-4 flex-row-reverse" >
+            <div class="lg:flex space-x-4 flex-row-reverse m-auto" >
               <div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="lg:ml-3 m-auto">
                   <path d="M7.25612 9.79881H6.50304C6.41702 9.79881 6.33453 9.76464 6.2737 9.70382C6.21288 9.643 6.17871 9.5605 6.17871 9.47449C6.17871 9.38847 6.21288 9.30598 6.2737 9.24516C6.33453 9.18433 6.41702 9.15016 6.50304 9.15016H7.25612C7.54252 9.14908 7.82391 9.0749 8.07364 8.93466C8.32336 8.79442 8.53315 8.59275 8.68314 8.34876L9.54585 6.94054C10.6894 5.06789 11.1772 3.44108 11.1772 1.50162C11.1771 1.2756 11.2668 1.05879 11.4265 0.898845C11.5862 0.7389 11.8028 0.648909 12.0289 0.648651H12.2436C13.1267 0.649681 13.9734 1.00098 14.5978 1.62548C15.2222 2.24997 15.5734 3.09666 15.5744 3.97979C15.5742 5.63765 15.2055 7.27474 14.495 8.77265L14.2972 9.22476C14.2611 9.30093 14.1968 9.36006 14.1178 9.38962C14.0389 9.41918 13.9516 9.41685 13.8743 9.38312C13.7971 9.34939 13.736 9.28691 13.704 9.20891C13.672 9.13092 13.6717 9.04355 13.703 8.9653L13.9009 8.51319C14.5782 7.09818 14.9285 5.54889 14.9257 3.98011C14.9251 3.26888 14.6424 2.58695 14.1395 2.08397C13.6367 1.58099 12.9548 1.29807 12.2436 1.2973H12.0289C11.9751 1.29739 11.9236 1.31876 11.8855 1.35674C11.8475 1.39473 11.826 1.44624 11.8258 1.5C11.8258 3.54 11.2933 5.32152 10.0995 7.27687L9.23839 8.6867C9.03005 9.02556 8.73861 9.30559 8.39169 9.50021C8.04478 9.69484 7.6539 9.79762 7.25612 9.79881Z" fill="black"/>
@@ -711,7 +711,7 @@
               </div>
               <div class="space-y-3">
               <h3 class="text-xl font-bold">The Benefits Only</h3>
-              <hr class="w-28 m-auto lg:ml-52">
+              <hr class="w-28 m-auto lg:mr-0">
               <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
             </div>
             </div>
